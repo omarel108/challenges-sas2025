@@ -2,13 +2,15 @@
 
 int main()
 {
-    int n,i;
+    int n, chiffre;
     printf("entrez un nombre: ");
     scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        printf("%d ",2*i);
-    }
 
+    while(n>0){
+
+        printf("%d",n%10);
+        n=n/10;
+    }
 
    return 0;
 }

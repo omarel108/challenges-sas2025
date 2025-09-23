@@ -2,11 +2,14 @@
 
 int main()
 {
-    int n,i;
+    int i,n;
+    do{
     printf("entrez un nombre: ");
     scanf("%d",&n);
+    }while (n<=0);
+
     for(i=1;i<=n;i++){
-        printf("%d ",2*i);
+        printf("%d ",i);
     }
 
 
